@@ -18,7 +18,7 @@ generateBtn.addEventListener("click", () => {
   var hasNumber = numbersEl.checked;
   var hasSymbol = symbolsEl.checked;
 
-  resultEl.innerText = generatePassword(
+  passwordEl.innerText = generatePassword(
     hasLower, 
     hasUpper, 
     hasNumber, 
@@ -57,7 +57,7 @@ function generatePassword(lower, upper, number, symbol, length) {
 }
 
 // Dom Elements
-var resultEl = document.getElementById('result');
+var passwordEl = document.getElementById('password');
 var lengthEl = document.getElementById('length');
 var uppercaseEl = document.getElementById('uppercase');
 var lowercaseEl = document.getElementById('lowercase');
