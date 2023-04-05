@@ -118,6 +118,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Modal Styles */
 .modal {
   position: fixed;
   top: 50%;
