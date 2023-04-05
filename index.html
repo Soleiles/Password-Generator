@@ -26,6 +26,27 @@
         </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
+          <div class="settings">
+              <div class="setting">
+                <label>Password Length</label>
+                <input type="number" id="length" min='8' max='128' value='8' />
+              </div>
+              <div class="setting">
+                <label>Include Uppercase Letters</label>
+                <input type="checkbox" id="uppercase" checked />
+              </div>
+              <div class="setting">
+                <label>Include Lowercase Letters</label>
+                <input type="checkbox" id="lowercase" checked />
+              </div>
+              <div class="setting">
+                <label>Include Numbers</label>
+                <input type="checkbox" id="numbers" checked />
+              </div>
+              <div class="setting">
+                <label>Include Symbols</label>
+                <input type="checkbox" id="symbols" checked />
+              </div>
         </div>
       </div>
     </div>
