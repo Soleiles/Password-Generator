@@ -12,6 +12,15 @@ This homework has helped me understand more about the use functions as well as h
 ![password-generator2](./assets/images/passgen2.JPG)
 ![password-generator3](./assets/images/passgen3.JPG)
 
+<ul>
+    <li>
+        <a href="https://github.com/Soleiles/Password-Generator">Repository</a>
+    </li>
+    <li>
+        <a href="https://soleiles.github.io/Password-Generator">Live Site</a>
+    </li>
+</ul>
+
 ## Sources
 <ul>
     <li>
