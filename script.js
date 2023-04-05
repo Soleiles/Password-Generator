@@ -26,6 +26,35 @@ generateBtn.addEventListener("click", () => {
     length);
 });
 
+// Generates password function
+function generatePassword(lower, upper, number, symbol, length) {
+  let generatedPassword = '';
+
+  var typesCount = lower + upper + number + symbol;
+
+  console.log('typesCount: ', typesCount);
+
+  var typesArr =[{lower}, {upper}, {number}, {symbol}].filter
+  (item => Object.values(item)[0]);
+
+  console.log('typesArr: ', typesArr);
+
+  if(typesCount === 0) {
+    return '';
+  }
+
+  for(let i = 0; i < length; i += typesCount) {
+    typesArr.forEach(type => {
+      var funcName = Object.keys(type)[0]
+      
+      generatedPassword += randomFunc[funcName]();
+    });
+  }
+
+  const finalPassword = generatedPassword.slice(0, length);
+
+  return finalPassword;
+}
 
 // Dom Elements
 var resultEl = document.getElementById('result');
