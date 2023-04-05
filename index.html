@@ -25,32 +25,40 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-          <!-- Prompt Settings -->
-          <div class="settings">
-              <div class="setting">
-                <label>Password Length</label>
-                <input type="number" id="length" min='8' max='128' value='8' />
-              </div>
-              <div class="setting">
-                <label>Include Uppercase Letters</label>
-                <input type="checkbox" id="uppercase" checked />
-              </div>
-              <div class="setting">
-                <label>Include Lowercase Letters</label>
-                <input type="checkbox" id="lowercase" checked />
-              </div>
-              <div class="setting">
-                <label>Include Numbers</label>
-                <input type="checkbox" id="numbers" checked />
-              </div>
-              <div class="setting">
-                <label>Include Symbols</label>
-                <input type="checkbox" id="symbols" checked />
-              </div>
-        </div>
+          <button data-modal-target="#modal" class="btn">Generate Password</button>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">Title</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="settings">
+                <div class="setting">
+                  <label>Password Length</label>
+                  <input type="number" id="length" min='8' max='128' value='8' />
+                </div>
+                <div class="setting">
+                  <label>Include Uppercase Letters</label>
+                  <input type="checkbox" id="uppercase" checked />
+                </div>
+                <div class="setting">
+                  <label>Include Lowercase Letters</label>
+                  <input type="checkbox" id="lowercase" checked />
+                </div>
+                <div class="setting">
+                  <label>Include Numbers</label>
+                  <input type="checkbox" id="numbers" checked />
+                </div>
+                <div class="setting">
+                  <label>Include Symbols</label>
+                  <input type="checkbox" id="symbols" checked />
+                </div>
+                <button id="generate" class="btn">Generate Password</button>
+            </div>
+            </div>
       </div>
     </div>
+    <div id="overlay"></div>
     <script src="script.js"></script>
   </body>
 </html>
